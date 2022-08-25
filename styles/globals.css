@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&display=swap');
+.bg-nav{
+  background-color: #E4EFE5;
+}
+nav{
+  font-family: 'Playfair Display';
+}
+.navigation a.active{
+  border-bottom: 1px solid #49B053;
+  color:#49B053;
+  font-weight: 700;
+}
+
+.brand{
+  width: 51px;
+  height:37px;
+  background-color: #347F41;
+  font-weight: 700;
+}
+.mode-btn{
+  background-color:#FFF;
+  border:1px solid #49B053;
+  border-radius: 4px;
+}
+.blog-img{
+  width:100%;
+  margin:auto;
+  margin-right:20px;
+}
+.white-btn{
+  font-weight: 700;
+  transition:all 0.5s ease;
+}
+.white-btn:hover{
+  background-color: #347F41;
+  color:#FFF
+}
+.text-green{
+  color:#49B053;
+}
+.text-gray{
+  color:#9C9BAA;
+}
+.card{
+  border-radius: 4px;
+  border: 1px solid #49B053;
+  width: 342px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+.link a{
+  display:block;
+}
+.link a:hover{
+  text-decoration: underline;
+}
+.tag{
+  background-color: #f5f5f6;
+  border-radius: 8px;
+  padding:4px 8px;
+  font-size: 12px;
+}
+.category{
+  text-align: center;
+}
+.category a{
+  background-color: #E4EFE5;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.copyright{
+  margin:0px auto;
+  width:max-content;;
+  position:relative;
+  margin-top:2rem;
+}
+.copyright::before{
+  content:'';
+  width:100%;
+  height: 1px;
+  background-color: #FFF;
+  position: absolute;
+  top:-16px;
+  left:0;
+}
+.copyright p:last-child{
+  color:#49B053;
+}
+.blog-card{
+  position:relative;
+}
+.img-card{
+  border:4px solid #B0d984;
+  border-radius: 8px;
+  height: 223px;
+  z-index: 1;
+}
+.read-more{
+  position:absolute;
+  top:0;
+  left:0;
+  width:321px;
+  height:222px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  opacity:0;
+  transition: all 0.2s ease;
+  z-index: 2;
+}
+.blog-card:hover .read-more{
+  opacity:1;
+  background-color:#1616163d;
+  border-radius: 8px;
+}
+.blog-card:hover .img-card{
+  border:4px solid #637865;
+}
+.sticker{
+  background-color: #B0d984;
+  width:84px;
+  height: 55px;
+}
+.hero{
+  background-color: #E4EFE5;
+  height:100vh;
+}
+.left,
+.right{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.h-100{
+  height:100%;
+}
+.heading{
+  color:#347F41;
+  letter-spacing: 0.02em;
+  font-size: 48px;
+}
+.sub-heading{
+  font-size: 22px;
+  color:#347F41;
+  font-weight: 400;
+}
+.search-input{
+  width:625px;
+  margin:20px auto 0;
+}
+.hero-img{
+  width:468px;
+  height:366px;
+}
